@@ -1,27 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="Contact.ico">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Sunil Kumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <h1>My Contact Details</h1>
-    <p>My Fictional Address</p>
-    <p>09152667101</p>
-    <p>jaiswarsunil915@gmail.com</p>
-    <hr>
-    <input type="date">
-    <form action="mailto:jaiswarsunil915@gmail.com" method="post" enctype="text/plain">
-      <label>Your Name:</label>
-      <input type="text" name="yourName" value=""><br>
-      <label>Your Email:</label>
-      <input type="email" name="yourEmail" value=""><br>
-      <label>Your Message:</label><br>
-      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
-      <input type="submit" name="">
-    </form>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span>S</span> Sunil Kumar</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="index.html#contact">Let's Talk</a>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect.</h2>
+          <p class="contact-copy">
+            I’m available for web development, digital experience, and business-focused design opportunities.
+          </p>
+
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:jaiswarsunil915@gmail.com">jaiswarsunil915@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919152667101">+91 9152667101</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sunilkumar-jaiswar-5a1698143/" target="_blank" rel="noreferrer">sunilkumar-jaiswar</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="mailto:jaiswarsunil915@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Your Name
+            <input type="text" name="yourName" placeholder="Enter your name" />
+          </label>
+
+          <label>
+            Your Email
+            <input type="email" name="yourEmail" placeholder="Enter your email" />
+          </label>
+
+          <label>
+            Your Message
+            <textarea name="yourMessage" rows="5" placeholder="Tell me about your project"></textarea>
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 Sunil Kumar</p>
+        <a href="index.html">Back to Home</a>
+      </div>
+    </footer>
   </body>
 </html>
