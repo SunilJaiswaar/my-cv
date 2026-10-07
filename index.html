@@ -1,63 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Sunil's Personal Site</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sunil Kumar | Programmer, Web Developer, and digital creator portfolio"
+    />
+    <title>Sunil Kumar | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
-
   <body>
-    <table cellspacing="20">
-      <tr>
-        <td><img src="images/sunil.png" alt="Sunil profile picture"></td>
-        <td><h1>Sunil Kumar</h1>
-        <p><em>Founder and CEO of <strong>Not Yet</strong>.</em></p>
-        <p>I am an Programmer and Web Developer. I ❤️ coffee and brew my own beers.</p></td>
-      </tr>
-    </table>
-    <hr>
-    <h3>Books and Teaching</h3>
-    <ul>
-      <li>The Complete Python and Java Programming</li>
-      <li>The Complete Web Development </li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2015-2017</td>
-          <td>Teaching at The Institute of RA Academy</td>
-        </tr>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#home"><span>S</span> Sunil Kumar</a>
 
-      </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <tr>
-        <td>Web Development</td>
-        <td>⭐️⭐️⭐️⭐️⭐️</td>
-      </tr>
-       <tr>
-        <td>Programming</td>
-        <td>⭐️⭐️⭐️⭐️⭐️</td>
-      </tr>
-      <tr>
-        <td>Photography</td>
-        <td>⭐️⭐️⭐️</td>
-      </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact-me.html">Contact Me</a>
+        <a class="nav-cta" href="#contact">Let's Talk</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Programmer • Web Developer • Founder</p>
+            <h1>Building digital experiences that feel modern, useful, and memorable.</h1>
+            <p class="lead">
+              I’m Sunil Kumar, a programmer and web developer with a passion for crafting
+              clean, responsive interfaces and helping businesses present themselves online with
+              confidence.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#projects">View My Work</a>
+              <a class="secondary-btn" href="mailto:jaiswarsunil915@gmail.com">Email Me</a>
+            </div>
+
+            <ul class="hero-meta" aria-label="Quick facts">
+              <li>Founder & CEO of Not Yet</li>
+              <li>Web Development</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="profile-card">
+              <img src="images/sunil.png" alt="Sunil Kumar portrait" />
+              <div class="profile-details">
+                <h2>Sunil Kumar</h2>
+                <p>Programmer & Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Designing thoughtful digital experiences.</h2>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              I enjoy turning ideas into polished websites and digital experiences. My work combines
+              technical execution with visual clarity, helping businesses and personal brands stand
+              out online.
+            </p>
+            <p>
+              Through my projects and freelance-style work, I’ve focused on creating interfaces that
+              are easy to use, fast to navigate, and aligned with each brand’s identity.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-box">
+              <strong>5+</strong>
+              <span>Years of hands-on learning</span>
+            </div>
+            <div class="stat-box">
+              <strong>10+</strong>
+              <span>Creative digital projects</span>
+            </div>
+            <div class="stat-box">
+              <strong>100%</strong>
+              <span>Responsive focus</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">Experience</p>
+            <h2>Selected work and digital experiences.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-year">2015–2017</div>
+              <div class="timeline-content">
+                <h3>Teaching and Skill Development</h3>
+                <p>Worked as a trainer at The Institute of RA Academy, helping learners build practical knowledge in programming and web technologies.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-year">2018–2020</div>
+              <div class="timeline-content">
+                <h3>Web & Digital Projects</h3>
+                <p>Focused on building modern, clean, digital experiences for businesses and online brands, with an emphasis on website presentation and conversion-focused design.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-year">Present</div>
+              <div class="timeline-content">
+                <h3>Founder & CEO, Not Yet</h3>
+                <p>Leading personal and digital growth initiatives while exploring product, design, and technology opportunities to build value-driven experiences.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">Featured Work</p>
+            <h2>Brands and products I’ve supported online.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <span class="project-tag">Business Website</span>
+              <h3>PropertyCRM</h3>
+              <p>Responsive digital presence for a property and client-management platform.</p>
+              <a href="https://propertycrm.in/" target="_blank" rel="noreferrer">Visit site</a>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">HR Platform</span>
+              <h3>The Adroit HR</h3>
+              <p>Professional online branding and structured presentation for a human resources platform.</p>
+              <a href="https://www.theadroithr.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Beauty Brand</span>
+              <h3>Laadorn Cosmetics</h3>
+              <p>Elegant brand storytelling and polished digital presentation for a cosmetics product line.</p>
+              <a href="https://laadorncosmetics.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Industrial Brand</span>
+              <h3>Spectrum Filtration</h3>
+              <p>Clean, technical presentation designed for an industrial and filtration-focused business.</p>
+              <a href="https://www.spectrumfiltration.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Home Products</span>
+              <h3>Greenply</h3>
+              <p>Digital communication focused on credibility, product positioning, and customer trust.</p>
+              <a href="https://www.greenply.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Digital Experience</span>
+              <h3>FWF</h3>
+              <p>Modern brand experience for a service-led business with a strong online identity.</p>
+              <a href="https://www.fwf.com/" target="_blank" rel="noreferrer">Visit site</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something meaningful.</h2>
+            <p class="contact-copy">
+              I’m open to exciting web development, freelance, and digital branding opportunities.
+            </p>
+
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:jaiswarsunil915@gmail.com">jaiswarsunil915@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+919152667101">+91 9152667101</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sunilkumar-jaiswar-5a1698143/" target="_blank" rel="noreferrer">sunilkumar-jaiswar</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" action="mailto:jaiswarsunil915@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Your Name
+              <input type="text" name="yourName" placeholder="Enter your name" />
+            </label>
+
+            <label>
+              Your Email
+              <input type="email" name="yourEmail" placeholder="Enter your email" />
+            </label>
+
+            <label>
+              Your Message
+              <textarea name="yourMessage" rows="5" placeholder="Tell me about your project"></textarea>
+            </label>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 Sunil Kumar</p>
+        <a href="#home">Back to Top</a>
+      </div>
+    </footer>
   </body>
 </html>
